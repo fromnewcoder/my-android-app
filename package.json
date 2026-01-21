@@ -3,15 +3,22 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node index.js",
+    "serve": "npx http-server www -p 3000 -c-1",
+    "android": "npx cap sync android",
+    "open-android": "npx cap open android"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
+  "description": "小学生智能助手聊天应用 - 安卓平板APP",
   "dependencies": {
     "@capacitor/android": "^8.0.1",
     "@capacitor/cli": "^8.0.1",
     "@capacitor/core": "^8.0.1"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1"
   }
 }
