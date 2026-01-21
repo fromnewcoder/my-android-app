@@ -1,0 +1,150 @@
+# Created by .gitignore generator
+# Date: [Current Date]
+
+### Node.js ###
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Build outputs
+dist/
+build/
+out/
+.next/
+.cache/
+
+# Coverage
+coverage/
+.nyc_output/
+
+# Logs
+logs/
+*.log
+
+### Android ###
+# Gradle
+android/.gradle/
+android/gradle/
+gradle/
+.gradle/
+
+# Build outputs
+android/build/
+android/app/build/
+android/*/build/
+build/
+*.apk
+*.aab
+
+# IntelliJ IDEA
+android/.idea/
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Generated files
+local.properties
+*.keystore
+*.jks
+
+### Capacitor ###
+# Platform-specific generated files
+android/app/src/main/assets/capacitor.config.json
+android/app/src/main/assets/capacitor.plugins.json
+ios/App/Podfile.lock
+ios/App/Pods/
+
+# Build artifacts
+android/app/build/
+android/app/src/main/jniLibs/
+android/app/libs/
+
+### System ###
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+
+### IDE ###
+# Visual Studio Code
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# IntelliJ IDEA (with exceptions)
+.idea/
+# !.idea/codeStyles/Project.xml
+# !.idea/codeStyles/codeStyleConfig.xml
+# !.idea/inspectionProfiles/Project_Default.xml
+
+# Workspace files
+*.sublime-workspace
+*.code-workspace
+
+### General ###
+# OS metadata
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Temp files
+*.tmp
+*.temp
+*~
+~$*
+
+# Misc
+*.swp
+*.swo
+*#
+.#*
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+### Project Specific ###
+# Capacitor generated configs
+capacitor.config.ts
+capacitor.config.js
+capacitor.config.json
+
+# Optional: Keep or remove based on your project
+# !android/app/src/main/assets/  # Uncomment if you want to keep assets but ignore specific files
+# android/app/src/main/assets/capacitor.*
+
+# Development tools
+.prettierrc
+.eslintrc.js
+.eslintrc.json
+.stylelintrc
+.babelrc
+jest.config.js
+tsconfig.json
+tsconfig.*.json
